@@ -1,0 +1,386 @@
+html{
+font-family:Arial, Helvetica, sans-serif;
+user-select:none;
+text-align:center;
+height:100%;
+width:100%;
+background-color:transparent;
+zoom:0.8;
+}
+.window{
+background-color:#FFF;
+border-radius:12px 12px 12px 12px;
+text-align:center;
+width:540px;
+height:350px;
+position:relative;
+user-select:none;
+}
+.cb button{
+font-weight: bold;
+text-align: center;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+}
+.top{
+text-align:center;
+background-color:#4cacc4;
+color:white;
+padding:10px;
+border-radius:12px 12px 0px 0px;
+}
+label{
+margin-right:5px;
+}
+.mainmenu label button{
+font-weight:bold;
+text-align:center;
+width:160px;
+height:120px;
+color:#FFF;
+background-color:#4cacc4;
+font-size:25px;
+border-radius:12px;
+margin:5px 2.5px 0 2.5px;
+padding:5px 20px;
+display:inline-block;
+cursor:pointer;
+}
+.mainmenu{
+display:none;
+position:relative;
+bottom:50px;
+}
+.weapons details{
+font-weight: bold;
+text-align: center;
+width: 440px;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+}
+.weapons details button{
+width:100px;
+height:36px;
+background-color:#FFF;
+color: #4cacc4;
+border:none;
+border-radius:10px;
+}
+.weapons details input{
+cursor:pointer;
+width:25px;height:25px;
+}
+.weapons{
+position:relative;
+bottom:60px;
+display:none;
+}
+.warp{
+position:relative;
+bottom:60px;
+display:none;
+}
+.warp input{
+height:40px;
+width:110px;
+border-width:1.5px;
+border-radius:5px;
+}
+.warp .pos{
+background-color:limegreen;
+}
+#warplist{
+font-size:20px;
+}
+#warplist tr{
+text-align:center;
+}
+#warplist button{
+font-weight: bold;
+text-align: center;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+border:none;
+}
+#add{
+font-weight: bold;
+text-align: center;
+width: 220px;
+height: 45px;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;border:none;
+}
+#loadjson{
+}
+.warpUtil{
+font-weight: bold;
+text-align: center;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+border:none;
+}
+.info{
+position:relative;
+bottom:60px;
+display:none;
+}
+.u5kun{
+display:none;
+}
+.mainmenu label button{
+font-weight:bold;
+text-align:center;
+width:160px;
+height:120px;
+color:#FFF;
+background-color:#4cacc4;
+font-size:25px;
+border-radius:12px;
+margin:5px 2.5px 0 2.5px;
+padding:5px 20px;
+display:inline-block;
+cursor:pointer;
+}
+.mainmenu{
+position:relative;
+bottom:50px;
+}
+.btn2{
+font-weight: bold;
+text-align: center;
+width: 400px;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border:none;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+}
+.utility label button{
+font-weight:bold;
+text-align:center;
+width:440px;
+height:60px;
+color:#FFF;
+background-color:#4cacc4;
+font-size:25px;
+border-radius:12px;
+margin:5px 2.5px 0 2.5px;
+padding:5px 20px;
+display:inline-block;
+cursor:pointer;
+}
+.utility label#newhp{
+  font-weight:bold;
+  text-align:center;
+  width:360px;
+  height:40px;
+  color:#FFF;
+  background-color:#4cacc4;
+  font-size:25px;
+  border-radius:12px;
+  margin:5px 2.5px 0 2.5px;
+  padding:5px 20px;
+  display:inline-block;
+  cursor:pointer;
+}
+.utility{
+position:relative;
+bottom:60px;
+display:none;
+}
+.utility input[type="number"]{
+height:40px;
+width:110px;
+border-width:1.5px;
+border-radius:5px;
+}
+.utility input[type="checkbox"]{
+cursor:pointer;
+width:25px;
+height:25px;
+}
+.pin details{
+font-weight: bold;
+text-align: center;
+width: 440px;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+}
+.pin details button{
+width:100px;
+height:36px;
+background-color:#FFF;
+color: #4cacc4;
+border:none;
+border-radius:10px;
+}
+.pin{
+position:relative;
+bottom:60px;
+display:none;
+}
+#update{
+font-weight: bold;
+text-align: center;
+color: #FFF;
+background-color: #4cacc4;
+font-size: 25px;
+border-radius: 12px;
+margin: 5px 2.5px 0 2.5px;
+padding: 5px 20px;
+display: inline-block;
+cursor: pointer;
+border:none;
+}
+.close{
+position:relative;
+bottom:76px;
+right:-270px;
+border-radius:20px;
+font-size:25px;
+width:40px;
+height:40px;
+font-weight:bold;
+background-color:#d34435;
+color:#FFF;
+border:none;
+cursor:pointer;
+}
+.homebtn{
+display:block;
+position:relative;
+bottom:105px;
+border-radius:20px;
+font-size:25px;
+width:40px;
+height:40px;
+font-weight:bold;
+background-color:#FFF;
+color:#000;
+border:none;
+cursor:pointer;
+}
+.flash{
+display:none;
+position:absolute;
+top:250px;
+left:270px;
+padding:6px 8px 6px 8px;
+border-radius:8px;
+background-color:whitesmoke;
+font-size:16px;
+}
+.none{
+position:absolute;
+bottom:305px;
+right:490px;
+border-radius:20px;
+font-size:25px;
+width:40px;
+height:40px;
+font-weight:bold;
+background-color:#FFF;
+color:#4cacc4;
+border:none;
+cursor:pointer;
+}
+.scrollbar {
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #F5F5F5;
+}
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #B8B8B8;
+}
+.no-ui {
+  -moz-appearance:textfield; 
+} 
+.no-ui::-webkit-outer-spin-button, 
+.no-ui::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+}
+input[type="checkbox"].togswi1{
+  box-sizing:border-box;
+  position:relative;
+  font-size:30px;/*基本サイズ お好きなサイズに設定*/
+  bottom:-5px;
+  width:2em;
+  height:1em;
+  padding:0;
+  appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  background:#AAA;/*オフの色*/
+  border-radius:0.5em;
+  -webkit-tap-highlight-color: transparent;
+}
+input[type="checkbox"].togswi1:checked{
+  background:#2C2;/*オンの色*/
+}
+input[type="checkbox"].togswi1::before{
+  box-sizing:border-box;
+  content:"";
+  position:absolute;
+  left:0.1em;
+  top:0.1em;
+  bottom:0.1em;
+  width:0.8em;
+  background:#FFF;
+  border-radius:0.4em;
+  transform:translate(0%,0%);
+  margin:0;
+}
+input[type="checkbox"].togswi1:checked::before{
+  transform:translate(125%,0%);
+}
