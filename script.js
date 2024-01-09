@@ -163,7 +163,7 @@ if(confirm("落ちない場合のみ続行してください")){
 if(h5gg.setValue("0x" + address.toString(16), '99999', 'F32')>0){
 fmsg('空中跳躍:成功');
 }}else{
-var textarea = document.createElement("textarea");
+/*var textarea = document.createElement("textarea");
 textarea.value = "0x" + address.toString(16);
 textarea.style.position = "fixed";
 textarea.style.opacity = 0;
@@ -171,7 +171,7 @@ document.body.appendChild(textarea);
 textarea.select();
 document.execCommand("copy");
 document.body.removeChild(textarea);
-alert("アドレスをコピーしました。\niGameGodでFloatでGoToし、\n0.3を99999にしてください。",)
+alert("アドレスをコピーしました。\niGameGodでFloatでGoToし、\n0.3を99999にしてください。",)*/
 }}
 function cacheGravity(){
 btnsound();
