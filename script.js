@@ -9,7 +9,7 @@ document.getElementById('btnsound').currentTime = 0;
 document.getElementById('btnsound').play();
 }
 function cb(){
-btnsound();
+btnsound();x
 windth = window.screen.width;
 let wndw = document.querySelector("#app");
 wndw.style.paddingLeft = windth/2 + 'px';
