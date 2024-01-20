@@ -131,8 +131,8 @@ h5gg.clearResults();
 h5gg.searchNumber('1092091904', 'I32', '0x000000000', '0x300000000');
 h5gg.searchNearby(role, 'I32', '0x40');
 h5gg.searchNumber(role, 'I32', '0x000000000', '0x300000000');
-h5gg.searchNearby('1', 'I32', '0x4');
-h5gg.searchNumber('1', 'I32', '0x000000000', '0x300000000');
+h5gg.searchNearby('257', 'I32', '0x4');
+h5gg.searchNumber('257', 'I32', '0x000000000', '0x300000000');
 if(h5gg.editAll('0', 'I32')>1){
 fmsg('体力無限:成功');
 }}
@@ -228,7 +228,8 @@ h5gg.clearResults();
 var iTime = time[i];
 h5gg.searchNumber(id, 'I32', '0x000000000', '0x300000000');
 h5gg.searchNearby(iTime, 'F32', '0x78');
-h5gg.searchNearby('1', 'I32', '0x4');
+h5gg.searchNearby('257', 'I32', '0x4');
+h5gg.searchNumber('257', 'I32', '0x000000000', '0x300000000');
 success += h5gg.editAll('0', 'I32');
 }
 if(success>=3){
