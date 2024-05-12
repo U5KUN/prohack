@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+setWindowRect(0,0,window.screen.height,window.screen.width);
+setButtonImage('https://static.macupdate.com/products/34765/l/bit-slicer-logo.png?v=1669011315');
+const prclis = h5gg.getProcList('ProductName');
+h5gg.setTargetProc(proclis[0].pid);
+setButtonAction(function(){
+let menu = document.querySelector("#app");
+if(menu.style.display=='none') {
+menu.style.display='block';
+setWindowTouch(true);
+}else{
+menu.style.display='none';
+setWindowTouch(false);
+}
+});    
+  </script>
+  <title>PRO Script</title>
+</head>
+<body>
+  <div id="app">
+    <div class="window">
+      <h2 class="top">改変一覧</h2>
+      <button class="close" onclick="hideWindow()">✕</button>
+      <br>
+      <div class="cb">
+        <button onclick="cb()">起動</button>
+      </div>
+      <div class="mainmenu">
+        <div class="scrollbar" style="max-height:290px">
+          <label><button onclick="tapPinned()"><span>固定済み</span></button></label>
+          <label><button onclick="tapWeapons()"><span>武器</span></button></label>
+          <label><button onclick="tapUtility()"><span>実用</span></button></label>
+          <label><button onclick="tapWarp()"><span>瞬間移動</span></button></label>
+          <label><button onclick="tapInfo()"><span>情報</span></button></label>
+          <label><button onclick="tapU5KUN()"><span>使い方</span></button></label>
+          </div>
+      </div>
+            <div class="weapons">
+                <div class="scrollbar" style="max-height:300px">
+                <h2>
+                  注意!! v6.2.0で、連射の数値に大きな変更がありました。
+                  <br>
+                  現在、それに対応させるために、スクリプトを修正しているのでもうしばらくお待ちください。
+                </h2>
+                <details id="punch"><summary>パンチ</summary><input type="checkbox" onclick="pin('punch')"><button onclick="hack(1735305744,'パンチ',['0.5'])">連射</button></details>
+                <details id="stick"><summary>人狼棒</summary><input type="checkbox" onclick="pin('stick')"><button onclick="hack(1254340962,'人狼棒',['0.800000011920929'])">連射</button></details>
+                <details id="racket"><summary>ラケット</summary><input type="checkbox" onclick="pin('racket')"><button onclick="hack(1779273765,'ラケット',['45','1','0.5','0.800000011920929'])">連射</button></details>
+                <details id="gre"><summary>グレネード</summary><input type="checkbox" onclick="pin('gre')"><button onclick="hack(1853065317,'グレネード',['1','20'])">連射</button></details>
+                <details id="inp"><summary>インパルス</summary><input type="checkbox" onclick="pin('inp')"><button onclick="hack(2029965220,'インパルス',['1','20'])">連射</button></details>
+                <details id="rifle"><summary>風船ライフル</summary><input type="checkbox" onclick="pin('rifle')"><button onclick="hack(1713446559,'風船ライフル',['0.5','1','30'])">連射</button></details>
+                <details id="gun"><summary>風船ガン</summary><input type="checkbox" onclick="pin('gun')"><button onclick="hack(1615132120,'風船ガン',['0.25','1','60'])">連射</button></details>
+                <details id="crack"><summary>火炎銃</summary><input type="checkbox" onclick="pin('crack')"><button onclick="hack(1421257790,'火炎銃',['1','5','30'])">連射</button></details>
+                <details id="remote"><summary>リモートボム</summary><input type="checkbox" onclick="pin('remote')"><button onclick="hack(1661681452,'リモートボム',['1','3','30'])">連射</button></details>
+                <details id="tp"><summary>テレポート</summary><input type="checkbox" onclick="pin('tp')"><button onclick="hack(1476720745,'テレポート',['1','2','60'])">連射</button></details>
+                <details id="trp"><summary>足止めトラップ</summary><input type="checkbox" onclick="pin('trp')"><button onclick="hack(1268409821,'足止めトラップ',['1','20'])">連射</button></details>
+                <details id="can"><summary>大砲</summary><input type="checkbox" onclick="pin('can')"><button onclick="hack(1088908112
+,'大砲',['1','4'])">連射</button></details>
+                <details id="icec"><summary></summary><input type="checkbox" onclick="pin('icec')"><button onclick="hack(1735305744,'アイスクリーム',['0.5','1','1.5'])">連射</button></details>
+                <h2>--- アニマルアイテム ---</h2>
+                <details id="ai1"><summary>岩･上昇気流</summary><input type="checkbox" onclick="pin('ai1')"><button onclick="hack(1476720745,'岩･上昇気流',['1','2','60'])">連射</button></details>
+                <details id="stair"><summary>階段</summary><input type="checkbox" onclick="pin('stair')"><button onclick="hack(1804833662,'階段',['1','2','60'])">連射</button></details>
+                <details id="aiwp"><summary>AIテレポート</summary><input type="checkbox" onclick="pin('aiwp')"><button onclick="hack(1476720745,'AIテレポート',['1','60'])">連射</button></details>
+                <details id="spn"><summary>回転斬り</summary><input type="checkbox" onclick="pin('spn')"><button onclick="hack(1779273765,'回転斬り',['0.5','1','0.800000011920929','45'])">連射</button></details>
+                <details id="aiget"><summary>AI獲得器</summary><input type="checkbox" onclick="pin('aiget')"><button onclick="hack(1031339950,'SAI獲得器',['0.5','1','60'])">連射</button></details>
+                <details id="frg"><summary>火球銃</summary><input type="checkbox" onclick="pin('frg')"><button onclick="hack(1031339950,'火球銃',['0.5','1','60'])">連射</button></details>
+                <details id="bsmk"><summary>黒煙</summary><input type="checkbox" onclick="pin('bsmk')"><button onclick="hack(1661681452,'黒煙',['1','30'])">連射</button></details>
+                <h2>--- 監獄かくれんぼ ---</h2>
+                <details id="fdC"><summary>宝箱発見器</summary><input type="checkbox" onclick="pin('fdC')"><button onclick="hack(1031339950,'宝箱発見器',['0.5','1','60'])">連射</button></details>
+                <details id="fdP"><summary>囚人発見器</summary><input type="checkbox" onclick="pin('fdP')"><button onclick="hack(1789885589,'囚人発見器',['1','50'])">連射</button></details>
+                <details id="hunts"><summary>看守棒</summary><input type="checkbox" onclick="pin('hunts')"><button onclick="hack(1254340962,'看守棒',['3','0.800000011920929'])">連射</button></details>
+                <h2>--- 利用不可 ---</h2>
+                <details><summary></summary><input type="checkbox" onclick="pin('')"><button onclick="hack(,'')">連射</button></details>
+                <details><summary></summary><input type="checkbox" onclick="pin('')"><button onclick="hack(,'')">連射</button></details>
+                <details><summary></summary><input type="checkbox" onclick="pin('')"><button onclick="hack(,'')">連射</button></details>
+                </div>
+            </div>
+      <div class="utility">
+          <div class="scrollbar" style="max-height:300px">
+            <h2>--- 新!体力無限 ---</h2>
+            <input type="checkbox" id="njhp" onclick="pin1('njhp')"><button onclick="nhp('200')" class="btn2" id="njhp">人狼</button><br />
+            <input type="checkbox" id="nvhp" onclick="pin1('nvhp')"><button onclick="nhp('100')" class="btn2" id="nvhp">市民</button><br />
+            <input type="checkbox" id="newhp" onclick="pin2('newhp')"><label id="newhp" class="pin2">実行<input type="checkbox" onclick="runhp()" id="newhp" class="togswi1 hprun"></label><br />
+            <h2>--- 他 ---</h2>
+            <input type="checkbox" id="jhp" onclick="pin1('jhp')"><button onclick="hp('200')" class="btn2" id="jhp">人狼体力無限</button><br />
+            <input type="checkbox" id="vhp" onclick="pin1('vhp')"><button onclick="hp('100')" class="btn2" id="vhp">市民体力無限</button><br />
+            <input type="checkbox" id="airj" onclick="pin1('airj')"><button onclick="air()" class="btn2"id="airj">空中跳躍</button><br />
+            <input type="checkbox" id="cshg" onclick="pin1('cshg')"><button onclick="cacheGravity()" class="btn2"id="cshg">重力キャッシュ</button><br />
+            <!--input type="checkbox" id="notrap" onclick="pin1('notrap')"><button onclick="notrap()" class="btn2" id="notrap">足止め回避</button><br /-->
+            <input type="checkbox" id="v55" onclick="pin1('v55')"><button onclick="v55()" class="btn2" id="v55">5v5用</button><br />
+              <!--input type="number" class="btn" id="mvs" placeholder="移動速度" class="no-ui" inputmode="decimal" enterkeyhint=”done” disabled-->
+              <input type="number" class="btn" id="jmp" placeholder="跳躍力" class="no-ui" inputmode="decimal" enterkeyhint=”done”>
+              <input type="number" class="btn" id="spd" placeholder="全体速度" class="no-ui" inputmode="decimal" enterkeyhint=”done”>
+              <input type="number" class="btn" id="grv" placeholder="重力" class="no-ui" inputmode="decimal" enterkeyhint=”done”>
+              <label><button id="add" onclick="applyUtil()"><span>適用</span></button></label>
+            </div>
+      </div>
+      <div class="pin">
+          <div class="scrollbar" style="max-height:300px">
+            <div id="pinlist">
+            </div>
+          </div>
+      </div>
+      <div class="warp">
+          <div class="scrollbar" style="max-height:300px">
+            <div>     
+              <input type="text" id="name" placeholder="お好みの名前">
+              <input type="number" class="pos" id="x" placeholder="X座標" class="no-ui" inputmode="decimal" enterkeyhint=”done”>
+              <input type="number" class="pos" id="y" placeholder="Y座標" class="no-ui" inputmode="decimal" enterkeyhint=”done”>
+              <input type="number" class="pos" id="z" placeholder="Z座標" class="no-ui" inputmode="decimal" enterkeyhint=”done”>
+              <button id="add" onclick="addWarp()"><span>座標を追加</span></button>
+              <button id="add" onclick="getLocation()"><span>座標を取得</span></button>
+            </div>
+            <table id="warplist">
+            </table>
+            <button class="warpUtil"><input type="file" onchange="loadWarp()" accept="application/json" id="loadjson"></button>
+            <button onclick="exportWarp()" class="warpUtil">ダウンロード</button>
+            <button onclick="copyWarp()" class="warpUtil">コピー</button>
+            <button onclick="pasteWarp()" class="warpUtil">ペースト</button>
+          </div>
+      </div>
+      <div class="info">
+        <div class="scrollbar" style="max-height:300px">
+          <p>脱獄ごっこPRO Script 1.4.1</p>
+          <p>対応バージョン: v6.2.0</p>
+          <p>U5KUN作</p>
+          <button id="update" onclick="location.reload()">再読み込み</button>
+        </div>
+      </div>
+      <div class="u5kun">
+        <div class="scrollbar" style="max-height:300px">
+        <a href="https://discord.gg/bRrgEaBrZU target="_blank" rel="noopener noreferrer">Discordで質問してください</a>
+        <a href="https://youtube.com/@u5kun./">YouTubeチャンネル</a>
+        </div>
+      </div>
+      <button class="none" onclick="backhome()">◀</button>
+      <div class="flash" id="flash">
+        <a></a>
+      </div>
+      <audio id="btnsound">
+        <source src="data:audio/ogg;base64,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5xhjjDHGnHPOMcYYY8455xhjjDHnnHOMMcaYAACgAgcAgAAbRTYnGAkqNGQlABAOAAAYw5RzzkEoJZUKIcYgdFBKSq1VCDEGIYRSUmotas45CCGUklJr0XPOQQihlJRai6qFUEopJaXWWnQtdFJKSam1GKOUIoSQUkqttRidEyGEklJqLcbmnIylpNRajDE252QsJaXWYoyxOeeca621FmOtzTnnXGspthhrbc45p3tsMdZYa3POOZ9bi63GWgsAMHlwAIBKsHGGlaSzwtHgQkNWAgC5AQCMUowx5pxzzjnnnHPOSaUYc845CCGEEEIIIZRKMeaccxBCCCGEEEIoGXPOOQchhBBCCCGEUErpnHMQQgghhBBCCKGU0jnnIIQQQgghhBBCKaVzzkEIIYQQQgghhFJKCCGEEEIIIYQQQgillFJCCCGEEEIIIYQQSimlhBBCCCGEEEIIIZRSSgkhhBBCCCGEEEIopZQSQgghhBBCCCWEUEoppZQQQgihhBBCCKGUUkopIYRSSikhhBBCKaWUUkIooYQQQgghlFJKKaWUEkIpIYQQQgillFJKKaWUUkIIIYQQSimllFJKKaWEUEIIIZRSSimllFJCKCWEEkIopZRSSimlhFBCCCGEUEoppZRSSgkhhBJCCKEAAKADBwCAACMqLcROM648AkcUMkxAhYasBADSAgAAQ6y11lprrbXWWmsNUtZaa6211lprrbVGKWuttdZaa6211lprqbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaa6211lprrbXWWmuttdZaSymllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSAdgFGw6A0RNGElJnGVYaceMJGCKQQkNWAgBpAQCAMYwx5hh0EEpJKaUKIecghE5CKq3FFmOEkHMQQiglpdZiizF4DkIIIZTSUmwxxlg8ByGEEFJqLcYYYwyyhVBKKSm11mKMtRbZQiillJRaizHWWoMxppSSUmqt1VhjrMUYE0pIqbXWYsy11mJ8rCWl1GKMscZYazHGthRS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" type="audio/wav">
+        </audio>
+    </div>
+  </div>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script id="main" src="script.js"></script>
+</body>
+</html>
