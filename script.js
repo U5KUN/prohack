@@ -132,6 +132,13 @@ h5gg.searchNearby('6.0', 'F32', '0x86');
 if(h5gg.editAll('0', 'I32')>0){
 fmsg('足止め無効:成功');
 }}
+function movespeed(){
+btnsound();
+h5gg.clearResults();
+h5gg.searchNumber('6.874417363427344e+28', 'F32', '0x000000000', '0x200000000');
+if(h5gg.editAll('98744175632069373439625920512', 'F32')>0){
+fmsg('移動速度上昇:成功');
+}}
 function hp(role){
 btnsound();
 h5gg.clearResults();
@@ -140,7 +147,7 @@ h5gg.searchNearby(role, 'I32', '0x40');
 h5gg.searchNumber(role, 'I32', '0x000000000', '0x300000000');
 h5gg.searchNearby('257', 'I32', '0x4');
 h5gg.searchNumber('257', 'I32', '0x000000000', '0x300000000');
-if(h5gg.editAll('0', 'I32')>1){
+if(h5gg.editAll('0', 'I32')>0){
 fmsg('体力無限:成功');
 }}
 function nhp(role){
@@ -173,7 +180,7 @@ clearInterval(dlocker);
 }}
 function air(){
 btnsound();
-var address = unityBase + 0x40E1BD0;
+var address = unityBase + 0x4234714;
 if(confirm("落ちない場合のみ続行してください")){
 if(h5gg.setValue("0x" + address.toString(16), '99999', 'F32')>0){
 fmsg('空中跳躍:成功');
@@ -188,6 +195,13 @@ document.execCommand("copy");
 document.body.removeChild(textarea);
 alert("アドレスをコピーしました。\niGameGodでFloatでGoToし、\n0.3を99999にしてください。",)*/
 }}
+function noAnimation(){
+for(var i=0; i<shresults.length; i++){
+var addresses = shresults[i].address
+if(h5gg.setValue(addresses + 4, 0, 'F32')==true){
+fmsg('アニメーション無効:成功');
+}}
+}
 function cacheGravity(){
 btnsound();
 h5gg.clearResults();
@@ -359,7 +373,7 @@ alert("クリップボードの文字列を読み込めませんでした\nク�
 });
 }
 function exportWarp(){
-var result = confirm('本当に実行しますか?\nダウンロードは必ずWebブラウザで行ってください\nH5GGを使っている場合は、実行しないでください');
+var result = confirm('本当に実行しますか?\nダウンロードは必ずWebブラウザで行ってください\nH5GG上では、実行しないでください');
 if(result){
 // HTMLのデータを取得
 var trElements = document.getElementsByTagName("tr");

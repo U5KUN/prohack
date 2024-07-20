@@ -41,11 +41,6 @@ setWindowTouch(false);
       </div>
             <div class="weapons">
                 <div class="scrollbar" style="max-height:300px">
-                <h2>
-                  注意!! v6.2.0で、連射の数値に大きな変更がありました。
-                  <br>
-                  現在、それに対応させるために、スクリプトを修正しているのでもうしばらくお待ちください。
-                </h2>
                 <details id="punch"><summary>パンチ</summary><input type="checkbox" onclick="pin('punch')"><button onclick="hack(1735305744,'パンチ',['0.5'])">連射</button></details>
                 <details id="stick"><summary>人狼棒</summary><input type="checkbox" onclick="pin('stick')"><button onclick="hack(1254340962,'人狼棒',['0.800000011920929'])">連射</button></details>
                 <details id="racket"><summary>ラケット</summary><input type="checkbox" onclick="pin('racket')"><button onclick="hack(1779273765,'ラケット',['45','1','0.5','0.800000011920929'])">連射</button></details>
@@ -53,7 +48,7 @@ setWindowTouch(false);
                 <details id="inp"><summary>インパルス</summary><input type="checkbox" onclick="pin('inp')"><button onclick="hack(2029965220,'インパルス',['1','20'])">連射</button></details>
                 <details id="rifle"><summary>風船ライフル</summary><input type="checkbox" onclick="pin('rifle')"><button onclick="hack(1713446559,'風船ライフル',['0.5','1','30'])">連射</button></details>
                 <details id="gun"><summary>風船ガン</summary><input type="checkbox" onclick="pin('gun')"><button onclick="hack(1615132120,'風船ガン',['0.25','1','60'])">連射</button></details>
-                <details id="crack"><summary>火炎銃</summary><input type="checkbox" onclick="pin('crack')"><button onclick="hack(1421257790,'火炎銃',['1','5','30'])">連射</button></details>
+                <details id="crack"><summary>火炎銃 ※非推奨</summary><input type="checkbox" onclick="pin('crack')"><button onclick="hack(1421257790,'火炎銃',['1','5','30'])">連射</button></details>
                 <details id="remote"><summary>リモートボム</summary><input type="checkbox" onclick="pin('remote')"><button onclick="hack(1661681452,'リモートボム',['1','3','30'])">連射</button></details>
                 <details id="tp"><summary>テレポート</summary><input type="checkbox" onclick="pin('tp')"><button onclick="hack(1476720745,'テレポート',['1','2','60'])">連射</button></details>
                 <details id="trp"><summary>足止めトラップ</summary><input type="checkbox" onclick="pin('trp')"><button onclick="hack(1268409821,'足止めトラップ',['1','20'])">連射</button></details>
@@ -80,11 +75,12 @@ setWindowTouch(false);
             </div>
       <div class="utility">
           <div class="scrollbar" style="max-height:300px">
-            <h2>--- 新!体力無限 ---</h2>
+            <!--h2>--- 新!体力無限 ---</h2>
             <input type="checkbox" id="njhp" onclick="pin1('njhp')"><button onclick="nhp('200')" class="btn2" id="njhp">人狼</button><br />
             <input type="checkbox" id="nvhp" onclick="pin1('nvhp')"><button onclick="nhp('100')" class="btn2" id="nvhp">市民</button><br />
             <input type="checkbox" id="newhp" onclick="pin2('newhp')"><label id="newhp" class="pin2">実行<input type="checkbox" onclick="runhp()" id="newhp" class="togswi1 hprun"></label><br />
-            <h2>--- 他 ---</h2>
+            <h2>--- 他 ---</h2-->
+            <input type="checkbox" id="mvs" onclick="pin1('mvs')"><button onclick="movespeed()" class="btn2" id="mvs">移動速度上昇</button><br />
             <input type="checkbox" id="jhp" onclick="pin1('jhp')"><button onclick="hp('200')" class="btn2" id="jhp">人狼体力無限</button><br />
             <input type="checkbox" id="vhp" onclick="pin1('vhp')"><button onclick="hp('100')" class="btn2" id="vhp">市民体力無限</button><br />
             <input type="checkbox" id="airj" onclick="pin1('airj')"><button onclick="air()" class="btn2"id="airj">空中跳躍</button><br />
@@ -124,16 +120,16 @@ setWindowTouch(false);
       </div>
       <div class="info">
         <div class="scrollbar" style="max-height:300px">
-          <p>脱獄ごっこPRO Script 1.4.1</p>
-          <p>対応バージョン: v6.2.0</p>
+          <p>脱獄ごっこPRO Script 1.5.0</p>
+          <p>対応バージョン: v8.0.0</p>
           <p>U5KUN作</p>
           <button id="update" onclick="location.reload()">再読み込み</button>
         </div>
       </div>
       <div class="u5kun">
         <div class="scrollbar" style="max-height:300px">
-        <a href="https://discord.gg/bRrgEaBrZU target="_blank" rel="noopener noreferrer">Discordで質問してください</a>
-        <a href="https://youtube.com/@u5kun./">YouTubeチャンネル</a>
+        <a href="https://discord.gg/AHEKbz53YY target="_blank" rel="noopener noreferrer">Discordで質問してください</a>
+        <a href="https://youtube.com/@u5kun/">YouTubeチャンネル</a>
         </div>
       </div>
       <button class="none" onclick="backhome()">◀</button>
