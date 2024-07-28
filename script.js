@@ -195,10 +195,18 @@ document.execCommand("copy");
 document.body.removeChild(textarea);
 alert("アドレスをコピーしました。\niGameGodでFloatでGoToし、\n0.3を99999にしてください。",)*/
 }}
+function allChestSwitch(){
+h5gg.clearResults();
+h5gg.searchNumber('2200465399785425311', 'I64', '0x000000000', '0x300000000');
+var counts = h5gg.getResultsCount();
+var results = h5gg.getResults(counts, 0);
+for(var i=0; i<counts; i++){
+h5gg.setValue(Number(results[i].address) + 120, "1", 'I32');
+}}
 function noAnimation(){
 for(var i=0; i<shresults.length; i++){
 var addresses = shresults[i].address
-if(h5gg.setValue(addresses + 4, 0, 'F32')==true){
+if(h5gg.setValue(addresses + 8, 0, 'F32')==true){
 fmsg('アニメーション無効:成功');
 }}
 }
