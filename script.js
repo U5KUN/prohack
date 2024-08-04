@@ -124,12 +124,14 @@ $(".pin #pinlist #" + name).remove();
 function notrap(){
 btnsound();
 h5gg.clearResults();
-h5gg.searchNumber('444444', 'I32', '0x000000000', '0x200000000');
-h5gg.searchNearby('444444', 'I32', '0x4');
-h5gg.searchNearby('1', 'I32', '0x4');
-h5gg.searchNumber('1', 'I32', '0x000000000', '0x200000000');
-h5gg.searchNearby('6.0', 'F32', '0x86');
-if(h5gg.editAll('0', 'I32')>0){
+h5gg.searchNumber('119.94001', 'F32', '0x000000000', '0x200000000');
+h5gg.searchNearby('120', 'F32', '0x4');
+h5gg.searchNearby('256', 'I32', '0x4');
+h5gg.searchNearby('79', 'I32', '0x4');
+h5gg.searchNearby('250', 'I32', '0x4');
+h5gg.searchNearby('5', 'F32', '0x4');
+h5gg.searchNumber('5', 'F32', '0x000000000', '0x200000000');
+if(h5gg.editAll('0', 'F32')>0){
 fmsg('足止め無効:成功');
 }}
 function movespeed(){
