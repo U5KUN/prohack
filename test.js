@@ -4,7 +4,7 @@ var AppId = ["310062006100640063006200370035002D0063003600650063002D003400310036
 /*0:U5KUN, 1:旧脱獄, 2:隠れん坊オンライン, 3:かめっち*/
 
 var uaddr1 = h5gg.getValue(base + 0x4A3D0C8, 'U64');
-var uaddr2 = h5gg.getValue(Number(uaddr2) + 0x434, 'U64');
+var uaddr2 = h5gg.getValue(Number(uaddr1) + 0x434, 'U64');
 var username = readUTF16String(uaddr2, 20);
 
 var aaddr1 = h5gg.getValue(Number(base) + 0x4A08CD8, "U64");
@@ -33,13 +33,12 @@ function patchBytes(addr, hex) {
     }
 }
 
-document.getElementById('username').textContent = "ユーザー名:" + resultString;
-fetch('/send-data', {
+fetch('https://ipban.onrender.com/send-data', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ number: resultString }) // 数値10をサーバーに送信
+    body: JSON.stringify({ number: username }) // 数値10をサーバーに送信
 })
     .then(response => response.text())
     .catch(error => {
